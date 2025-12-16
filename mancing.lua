@@ -1,5 +1,5 @@
 -- cracked by alt_
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WhatsHisIdentifierr/NoKey/refs/heads/main/Discord",false))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WhatsHisIdentifierr/NoKey/refs/heads/main/Discord",true))()
 local vu1 = syn and syn.request or http and http.request or (http_request or fluxus and fluxus.request or request)
 if vu1 then
     local vu2 = {
@@ -162,7 +162,7 @@ if vu1 then
     end
     local v12, v13, v14 = ipairs(vu8.Items:GetChildren())
     local v15 = {}
-    local vu16 = "Forky/FishIt/Position.json"
+    local vu16 = "Forky X/FishIt/Position.json"
     while true do
         local v17, v18 = v12(v13, v14)
         if v17 == nil then
@@ -360,7 +360,7 @@ if vu1 then
             if v80 then
                 task.wait(2)
                 v79.CFrame = v80
-                Forky("Teleported to your last position...")
+                chloex("Teleported to your last position...")
             end
         end)
     end
@@ -517,7 +517,7 @@ if vu1 then
     end
     local function vu127(p126)
         if vu9.lastState ~= p126 then
-            Forky(p126)
+            chloex(p126)
             vu9.lastState = p126
         end
     end
@@ -598,11 +598,11 @@ if vu1 then
                     if vu9.curCF then
                         pu138:PivotTo(vu9.curCF)
                         vu88(pu138, v139, true)
-                        Forky("Respawn \226\134\146 Back")
+                        chloex("Respawn \226\134\146 Back")
                     elseif vu9.origCF then
                         pu138:PivotTo(vu9.origCF)
                         vu88(pu138, v139, true)
-                        Forky("Back to farm")
+                        chloex("Back to farm")
                     end
                 end
             end)
@@ -681,8 +681,8 @@ if vu1 then
     local function vu156()
         vu9.notifConnections = {}
     end
-    local v157 = loadstring(game:HttpGet("https://raw.githubusercontent.com/agil0408/admincmd/refs/heads/main/Library"))():Window({
-        Title = "Forky |",
+    local v157 = loadstring(game:HttpGet("https://raw.githubusercontent.com/TesterX14/XXXX/refs/heads/main/Library"))():Window({
+        Title = "Forky X |",
         Footer = "Fish It",
         Image = "132435516080103",
         Color = Color3.fromRGB(0, 208, 255),
@@ -690,7 +690,7 @@ if vu1 then
         Version = 2
     })
     if v157 then
-        Forky("Window loaded!")
+        chloex("Window loaded!")
     end
     local v158 = {
         Info = v157:AddTab({
@@ -722,7 +722,7 @@ if vu1 then
             Icon = "rbxassetid://6034509993"
         })
     }
-    local vu159 = "https://raw.githubusercontent.com/agil0408/admincmd/refs/heads/main/v2.lua"
+    local vu159 = "https://raw.githubusercontent.com/ChloeRewite/test/refs/heads/main/2.lua"
     local v163, v164 = pcall(function()
         local v160 = game:HttpGet(vu159)
         local v161, v162 = loadstring(v160)
@@ -775,7 +775,7 @@ if vu1 then
                                 if vu9.fishingTimer >= (vu9.stuckThreshold or 10) then
                                     vu170 = "STUCK! Resetting..."
                                     vu171 = "255,69,0"
-                                    Forky("Fishing Stuck! Resetting...", 3)
+                                    chloex("Fishing Stuck! Resetting...", 3)
                                     local v173 = vu9.char
                                     if v173 then
                                         v173 = vu9.char:FindFirstChild("HumanoidRootPart")
@@ -1547,7 +1547,7 @@ if vu1 then
             end
             if v285 then
                 SavePosition(v285.CFrame)
-                Forky("Position saved successfully!")
+                chloex("Position saved successfully!")
             end
         end,
         SubTitle = "Reset Position",
@@ -1555,7 +1555,7 @@ if vu1 then
             if isfile(vu16) then
                 delfile(vu16)
             end
-            Forky("Last position has been reset.")
+            chloex("Last position has been reset.")
         end
     })
     local v286 = v158.Auto:AddSection("Enchant Features")
@@ -1842,7 +1842,7 @@ if vu1 then
                 vu7.Events.Totem:FireServer(pu367)
             end)
             if not v368 then
-                warn("[Forky] Totem spawn failed:", tostring(v369))
+                warn("[Chloe X] Totem spawn failed:", tostring(v369))
             end
         end
     end
@@ -1973,7 +1973,7 @@ if vu1 then
             else
                 if vu9.origCF then
                     vu3.Character:PivotTo(vu9.origCF)
-                    Forky("Auto Event Off")
+                    chloex("Auto Event Off")
                 end
                 local v395 = vu9
                 vu9.curCF = nil
@@ -2092,10 +2092,10 @@ if vu1 then
         end
         if p435 then
             vu421("Sending")
-            Forky("Sending " .. p435)
+            chloex("Sending " .. p435)
         else
             vu426("Sending")
-            Forky("Sending fish for coins")
+            chloex("Sending fish for coins")
         end
         if not pcall(function()
             vu7.Functions.Trade:InvokeServer(vu438.UserId, pu434)
@@ -2138,16 +2138,16 @@ if vu1 then
         local v448 = vu9.trade
         if not v448.trading then
             if not (v448.selectedPlayer and v448.selectedItem) then
-                return Forky("Select player & item first!")
+                return chloex("Select player & item first!")
             end
             v448.trading = true
             v448.successCount = 0
-            Forky("Starting trade with " .. v448.selectedPlayer)
+            chloex("Starting trade with " .. v448.selectedPlayer)
             local v449 = v448.currentGrouped[v448.selectedItem]
             if not v449 then
                 v448.trading = false
                 vu421("<font color=\'#ff3333\'>Item not found</font>")
-                return Forky("Item not found")
+                return chloex("Item not found")
             end
             v448.totalToTrade = math.min(v448.tradeAmount, # v449.uuids)
             local v450 = 1
@@ -2159,7 +2159,7 @@ if vu1 then
             end
             v448.trading = false
             vu421("<font color=\'#66ccff\'>All trades finished</font>")
-            Forky("All trades finished")
+            chloex("All trades finished")
         end
     end
     local function vu463(p452, p453)
@@ -2201,7 +2201,7 @@ if vu1 then
             v464.trading = true
             v464.totalReceived = 0
             vu426("<font color=\'#ffaa00\'>Starting...</font>")
-            Forky("Starting coin trade with " .. v464.selectedPlayer)
+            chloex("Starting coin trade with " .. v464.selectedPlayer)
             local v465 = vu2.Players.LocalPlayer
             local v466 = vu6.PlayerStatsUtility:GetPlayerModifiers(v465)
             local v467, v468, v469 = ipairs(vu8.Data:GetExpect({
@@ -2248,7 +2248,7 @@ if vu1 then
                     end
                     v464.trading = false
                     vu426(string.format("<font color=\'#66ccff\'>Coin trade finished (Target: %d, Received: %d)</font>", v464.targetCoins, v464.successCoins))
-                    Forky(string.format("Coin trade finished (Target: %d, Received: %d)", v464.targetCoins, v464.successCoins))
+                    chloex(string.format("Coin trade finished (Target: %d, Received: %d)", v464.targetCoins, v464.successCoins))
                 else
                     v464.trading = false
                     vu426("<font color=\'#ff3333\'>Player not found</font>")
@@ -2259,7 +2259,7 @@ if vu1 then
                 return
             end
         else
-            return Forky("\226\154\160 Select player & coin target first!")
+            return chloex("\226\154\160 Select player & coin target first!")
         end
     end
     local vu482 = v411:AddDropdown({
@@ -2769,7 +2769,7 @@ if vu1 then
         Content = "Refresh list!",
         Callback = function()
             vu594:SetValues(vu145())
-            Forky("Player list refreshed!")
+            chloex("Player list refreshed!")
         end
     })
     v592:AddButton({
@@ -2786,15 +2786,15 @@ if vu1 then
                     end
                     if v597 then
                         v597.CFrame = v596.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
-                        Forky("Teleported to " .. v596.Name)
+                        chloex("Teleported to " .. v596.Name)
                     else
-                        Forky("Your HumanoidRootPart not found.")
+                        chloex("Your HumanoidRootPart not found.")
                     end
                 else
-                    Forky("Target not found or not loaded.")
+                    chloex("Target not found or not loaded.")
                 end
             else
-                Forky("Please select a player first!")
+                chloex("Please select a player first!")
             end
         end
     })
@@ -2832,11 +2832,11 @@ if vu1 then
                     end
                     if v607 then
                         v607.CFrame = CFrame.new(v606 + Vector3.new(0, 3, 0))
-                        Forky("Teleported to " .. v605)
+                        chloex("Teleported to " .. v605)
                     end
                 end
             else
-                Forky("Please select a location first!")
+                chloex("Please select a location first!")
             end
         end
     })
@@ -2958,21 +2958,21 @@ if vu1 then
         Callback = function(pu624)
             if pu624 then
                 _G.hideident.overhead.TitleContainer.Visible = true
-                _G.hideident.titleLabel.Text = "Forky"
+                _G.hideident.titleLabel.Text = "Forky X"
                 _G.hideident.gradient.Color = ColorSequence.new({
                     ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 85, 255)),
                     ColorSequenceKeypoint.new(0.333333, Color3.fromRGB(145, 186, 255)),
                     ColorSequenceKeypoint.new(1, Color3.fromRGB(136, 243, 255))
                 })
                 _G.hideident.gradient.Rotation = 0
-                _G.hideident.header.Text = customHeaderText ~= "" and customHeaderText or "Chloe Rawr"
+                _G.hideident.header.Text = customHeaderText ~= "" and customHeaderText or "Forky Rawr"
                 _G.hideident.levelLabel.Text = customLevelText ~= "" and customLevelText or "???"
                 task.spawn(function()
                     while pu624 do
                         if _G.hideident and _G.hideident.overhead then
                             _G.hideident.overhead.TitleContainer.Visible = true
-                            _G.hideident.titleLabel.Text = "Forky"
-                            _G.hideident.header.Text = customHeaderText ~= "" and customHeaderText or "Chloe Rawr"
+                            _G.hideident.titleLabel.Text = "Forky X"
+                            _G.hideident.header.Text = customHeaderText ~= "" and customHeaderText or "Forky Rawr"
                             _G.hideident.levelLabel.Text = customLevelText ~= "" and customLevelText or "???"
                         end
                         task.wait(1)
@@ -3020,7 +3020,7 @@ if vu1 then
                                                 if v635 and (v635:IsA("ImageButton") and (v635.Visible and (v634.Visible and (v633.Visible and v635.Active)))) then
                                                     pcall(function()
                                                         vu7.Events.REEvReward:FireServer(vu632)
-                                                        Forky(string.format("Claimed Reward #%d", vu632))
+                                                        chloex(string.format("Claimed Reward #%d", vu632))
                                                     end)
                                                     task.wait(0.7)
                                                 end
@@ -3290,7 +3290,7 @@ if vu1 then
                             local vu693 = {
                                 embeds = {
                                     {
-                                        title = "Forky Webhook | Fish Caught",
+                                        title = "Forky X Webhook | Fish Caught",
                                         description = string.format("\226\156\166\239\184\142 Congratulations!!! **%s** You have obtained a new **%s** fish! Full details below:", game.Players.LocalPlayer.Name, v689),
                                         color = 52221,
                                         fields = {
@@ -3319,13 +3319,13 @@ if vu1 then
                                             url = getThumbnailURL(v688.Icon) or "https://i.imgur.com/WltO8IG.png"
                                         },
                                         footer = {
-                                            text = "Forky Webhook",
+                                            text = "Forky X Webhook",
                                             icon_url = "https://i.imgur.com/WltO8IG.png"
                                         },
                                         timestamp = os.date("!%Y-%m-%dT%H:%M:%S.000Z")
                                     }
                                 },
-                                username = "Forky Webhook",
+                                username = "Forky X Webhook",
                                 avatar_url = "https://i.imgur.com/9afHGRy.jpeg"
                             }
                             pcall(function()
@@ -3365,7 +3365,7 @@ if vu1 then
                             description = "Webhook successfully connected! You\'re ready to go!",
                             color = 31487,
                             author = {
-                                name = "Forky",
+                                name = "Forky X",
                                 icon_url = "https://i.imgur.com/WltO8IG.png"
                             },
                             image = {
@@ -3376,7 +3376,7 @@ if vu1 then
                             }
                         }
                     },
-                    username = "Forky Notification!",
+                    username = "Forky X Notification!",
                     avatar_url = "https://i.imgur.com/9afHGRy.jpeg",
                     attachments = {}
                 }
@@ -3392,9 +3392,9 @@ if vu1 then
                     }
                     v697(v698)
                 end)
-                Forky("Test Webhook Successfully Sent!")
+                chloex("Test Webhook Successfully Sent!")
             else
-                Forky("Set Webhook first!")
+                chloex("Set Webhook first!")
             end
         else
             return
@@ -3489,7 +3489,7 @@ if vu1 then
             end)
         end
     end)
-    local vu709 = loadstring(game:HttpGet("https://raw.githubusercontent.com/"))()
+    local vu709 = loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Chloe-X/refs/heads/main/Addons/2.lua"))()
     local v710 = v158.Webhook:AddSection("Webhook Event Settings")
     v710:AddInput({
         Title = "Set Hunt Webhook",
@@ -3497,7 +3497,7 @@ if vu1 then
         Callback = function(p711)
             if p711 and p711:match("^https://discord.com/api/webhooks/") then
                 vu709.Links.Hunt = p711
-                Forky("Hunt webhook updated!")
+                chloex("Hunt webhook updated!")
             end
         end
     })
@@ -3507,7 +3507,7 @@ if vu1 then
         Callback = function(p712)
             if p712 and p712:match("^https://discord.com/api/webhooks/") then
                 vu709.Links.ServerLuck = p712
-                Forky("Server Luck webhook updated!")
+                chloex("Server Luck webhook updated!")
             end
         end
     })
@@ -3865,11 +3865,11 @@ if vu1 then
                         end
                         fishBlock = # fishText > 0 and table.concat(fishText, "\n") or "(No Fishes Found)"
                         payload = {
-                            username = "Forky Notification!",
+                            username = "Forky X Notification!",
                             avatar_url = "https://i.imgur.com/9afHGRy.jpeg",
                             embeds = {
                                 {
-                                    title = "\227\128\162Forky Webhook | Player Info",
+                                    title = "\227\128\162Chloe X Webhook | Player Info",
                                     color = 52479,
                                     fields = {
                                         {
@@ -3896,7 +3896,7 @@ if vu1 then
                                         }
                                     },
                                     footer = {
-                                        text = string.format("Forky Auto Sync | Every %dm", vu716),
+                                        text = string.format("Forky X Auto Sync | Every %dm", vu716),
                                         icon_url = "https://i.imgur.com/WltO8IG.png"
                                     },
                                     timestamp = os.date("!%Y-%m-%dT%H:%M:%S.000Z")
@@ -3919,7 +3919,7 @@ if vu1 then
                             end)
                         end)
                     else
-                        Forky("Please set your Webhook URL first!")
+                        chloex("Please set your Webhook URL first!")
                     end
                 end
                 local v798 = vu723
@@ -3978,7 +3978,7 @@ if vu1 then
                         }
                     }
                 },
-                username = "Forky Notification!",
+                username = "Forky X Notification!",
                 avatar_url = "https://i.imgur.com/9afHGRy.jpeg",
                 attachments = {}
             })
@@ -4036,9 +4036,9 @@ if vu1 then
         Title = "Test Disconnected Player",
         Content = "Kick yourself and send disconnect webhook.",
         Callback = function()
-            Forky("Kicking player...")
+            chloex("Kicking player...")
             task.wait(1)
-            game.Players.LocalPlayer:Kick("Test Kick Forky | Rejoin manually if u in private server!")
+            game.Players.LocalPlayer:Kick("Test Kick Chloe X | Rejoin manually if u in private server!")
         end
     })
     hasSentDisconnect = false

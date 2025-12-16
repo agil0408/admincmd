@@ -260,8 +260,8 @@ function CircleClick(Button, X, Y)
     end)
 end
 
-local Forky = {}
-function Forky:MakeNotify(NotifyConfig)
+local Chloex = {}
+function Chloex:MakeNotify(NotifyConfig)
     local NotifyConfig = NotifyConfig or {}
     NotifyConfig.Title = NotifyConfig.Title or "Forky"
     NotifyConfig.Description = NotifyConfig.Description or "Notification"
@@ -459,8 +459,8 @@ function Forky:MakeNotify(NotifyConfig)
     return NotifyFunction
 end
 
-function Forky(msg, delay, color, title, desc)
-    return Forky:MakeNotify({
+function chloex(msg, delay, color, title, desc)
+    return Chloex:MakeNotify({
         Title = title or "Forky",
         Description = desc or "Notification",
         Content = msg or "Content",
@@ -469,7 +469,7 @@ function Forky(msg, delay, color, title, desc)
     })
 end
 
-function Forky:Window(GuiConfig)
+function Chloex:Window(GuiConfig)
     GuiConfig              = GuiConfig or {}
     GuiConfig.Title        = GuiConfig.Title or "Forky"
     GuiConfig.Footer       = GuiConfig.Footer or "Forky :3"
@@ -482,7 +482,7 @@ function Forky:Window(GuiConfig)
 
     local GuiFunc = {}
 
-    local Forky = Instance.new("ScreenGui");
+    local Chloeex = Instance.new("ScreenGui");
     local DropShadowHolder = Instance.new("Frame");
     local DropShadow = Instance.new("ImageLabel");
     local Main = Instance.new("Frame");
@@ -505,10 +505,10 @@ function Forky:Window(GuiConfig)
     local LayersFolder = Instance.new("Folder");
     local LayersPageLayout = Instance.new("UIPageLayout");
 
-    Forky.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    Forky.Name = "Forky"
-    Forky.ResetOnSpawn = false
-    Forky.Parent = game:GetService("CoreGui")
+    Chloeex.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    Chloeex.Name = "Forky"
+    Chloeex.ResetOnSpawn = false
+    Chloeex.Parent = game:GetService("CoreGui")
 
     DropShadowHolder.BackgroundTransparency = 1
     DropShadowHolder.BorderSizePixel = 0
@@ -521,10 +521,10 @@ function Forky:Window(GuiConfig)
     end
     DropShadowHolder.ZIndex = 0
     DropShadowHolder.Name = "DropShadowHolder"
-    DropShadowHolder.Parent = Forky
+    DropShadowHolder.Parent = Chloeex
 
-    DropShadowHolder.Position = UDim2.new(0, (Forky.AbsoluteSize.X // 2 - DropShadowHolder.Size.X.Offset // 2), 0,
-        (Forky.AbsoluteSize.Y // 2 - DropShadowHolder.Size.Y.Offset // 2))
+    DropShadowHolder.Position = UDim2.new(0, (Chloeex.AbsoluteSize.X // 2 - DropShadowHolder.Size.X.Offset // 2), 0,
+        (Chloeex.AbsoluteSize.Y // 2 - DropShadowHolder.Size.Y.Offset // 2))
     DropShadow.Image = "rbxassetid://6015897843"
     DropShadow.ImageColor3 = Color3.fromRGB(15, 15, 15)
     DropShadow.ImageTransparency = 1
@@ -748,7 +748,7 @@ function Forky:Window(GuiConfig)
 
     function GuiFunc:DestroyGui()
         if CoreGui:FindFirstChild("Forky") then
-            Forky:Destroy()
+            Chloeex:Destroy()
         end
     end
 
@@ -805,7 +805,7 @@ function Forky:Window(GuiConfig)
         Title.Position = UDim2.new(0, 0, 0, 4)
         Title.BackgroundTransparency = 1
         Title.Font = Enum.Font.GothamBold
-        Title.Text = "Forky"
+        Title.Text = "Window"
         Title.TextSize = 22
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.ZIndex = 52
@@ -854,7 +854,7 @@ function Forky:Window(GuiConfig)
         Instance.new("UICorner", Cancel).CornerRadius = UDim.new(0, 6)
 
         Yes.MouseButton1Click:Connect(function()
-            if Forky then Forky:Destroy() end
+            if Chloeex then Chloeex:Destroy() end
             if game.CoreGui:FindFirstChild("ToggleUIButton") then
                 game.CoreGui.ToggleUIButton:Destroy()
             end
@@ -2706,4 +2706,4 @@ function Forky:Window(GuiConfig)
     return Tabs
 end
 
-return Forky
+return Chloex

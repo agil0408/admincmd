@@ -15,35 +15,6 @@ local Window = WindUI:CreateWindow({
     HideSearchBar = true,
     ScrollBarEnabled = true,
 })
---//CONTIUNE HERE!!
-
-local Window = WindUI:CreateWindow({
-    Title = "Forky - Fish it",
-    Icon = "door-open",
-    Author = "by Forky",
-    Folder = "Forky",
-    Size = UDim2.fromOffset(600, 360),
-    MinSize = Vector2.new(560, 250),
-    MaxSize = Vector2.new(950, 760),
-    Transparent = true,
-    Theme = "Rose",
-    Resizable = true,
-    SideBarWidth = 190,
-    BackgroundImageTransparency = 0.42,
-    HideSearchBar = true,
-    ScrollBarEnabled = true,
-    KeySystem = {                                                               
-        Note = "Jangan Lupa Join Discord",                     
-        API = {                                                       
-            { 
-                Type = "junkiedev",
-                ServiceId = "forkyhub",
-                ApiKey = "7ce2cb6a-c002-489d-bf5b-ed3bb44d9d8a",
-                Provider = "fishit",
-            }    
-        }
-    }
-})
 -- [[ 1. CONFIGURATION SYSTEM SETUP ]] --
 local ForkyConfig = Window.ConfigManager:CreateConfig("Forky")
 

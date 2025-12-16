@@ -57,6 +57,20 @@ if vu6 then
                 Theme = "FORKY",
                 KeySystem = false
             })
+            v37:EditOpenButton({
+            Title = "Forky - Fish It",
+            Icon = "rbxassetid://116236936447443",
+            CornerRadius = UDim.new(0,30),
+            StrokeThickness = 1.5,
+            Color = ColorSequence.new(
+            Color3.fromHex("FF0F7B"),
+            Color3.fromHex("F89B29")
+            ),
+            OnlyMobile = false,
+            Enabled = true,
+            Draggable = true,
+            })
+
             v37:Tag({
                 Title = "Version : v1.0.1",
                 Color = Color3.fromHex("#30ff6a"),
@@ -181,43 +195,6 @@ if vu6 then
             local function vu52(p51)
                 return vu10:WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_net@0.2.0"):WaitForChild("net"):WaitForChild(p51)
             end
-            -- =================================================================
--- MULAI KODE ICON MENGAMBANG UNTUK MOBILE/HP
--- =================================================================
-
-            local Window = v37
-            local UserInputService = game:GetService("UserInputService")
-            local isMobile = UserInputService.TouchEnabled
-
-            -- Hanya aktifkan tombol mengambang jika di perangkat sentuh/HP
-            if isMobile then
-                
-                Window:EditOpenButton({
-                    -- Konfigurasi tampilan tombol
-                    Title = "FORKY",
-                    Icon = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150", -- Ikon Forky
-                    CornerRadius = UDim.new(0, 50),
-                    Size = UDim2.fromOffset(60, 60),
-                    
-                    -- Posisikan di Pojok Kanan Bawah
-                    Position = UDim2.new(1, -70, 1, -70), 
-                    
-                    -- Pastikan tombol diaktifkan untuk mobile
-                    Enabled = true,
-                    OnlyMobile = true 
-                })
-                
-                WindUI:Notify({ 
-                    Title = "Mobile Controls Active", 
-                    Content = "Gunakan tombol FORKY di layar untuk membuka menu.", 
-                    Duration = 5, 
-                    Icon = "smartphone" 
-                })
-            end
-
--- =================================================================
--- AKHIR KODE ICON MENGAMBANG
--- =================================================================
             local function vu137()
                 if vu49 and vu49.Parent then
                     vu49:Destroy()

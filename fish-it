@@ -1,3 +1,4 @@
+-- cracked by alt_ https://discord.gg/UQyfsxUQu6
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 local Window = WindUI:CreateWindow({
     Title = "Forky - Fish It",
@@ -15,6 +16,7 @@ local Window = WindUI:CreateWindow({
     HideSearchBar = true,
     ScrollBarEnabled = true,
 })
+
 -- [[ 1. CONFIGURATION SYSTEM SETUP ]] --
 local ForkyConfig = Window.ConfigManager:CreateConfig("Forky")
 

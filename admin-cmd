@@ -38,7 +38,7 @@ if vu6 then
             local v35 = v19["RF/AwaitTradeResponse"]
             local vu36 = v19["RE/FavoriteItem"]
             WindUI:AddTheme({
-                Name = "FORKY Theme",
+                Name = "FORKY",
                 Accent = Color3.fromHex("#18181b"),
                 Dialog = Color3.fromHex("#161616"),
                 Outline = Color3.fromHex("#FFFFFF"),
@@ -50,13 +50,27 @@ if vu6 then
             })
             local v37 = WindUI:CreateWindow({
                 Title = "FORKY HUB - Fish It",
-                Icon = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
+                Icon = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                 Author = "Forky",
                 Folder = "FORKY HUB",
                 Size = UDim2.fromOffset(600, 450),
-                Theme = "Indigo",
+                Theme = "FORKY",
                 KeySystem = false
             })
+            v37:EditOpenButton({
+            Title = "Forky - Fish It",
+            Icon = "rbxassetid://116236936447443",
+            CornerRadius = UDim.new(0,30),
+            StrokeThickness = 1.5,
+            Color = ColorSequence.new(
+            Color3.fromHex("0F0F0F"),
+            Color3.fromHex("0F0F0F")
+            ),
+            OnlyMobile = false,
+            Enabled = true,
+            Draggable = true,
+            })
+
             v37:Tag({
                 Title = "Version : v1.0.1",
                 Color = Color3.fromHex("#30ff6a"),
@@ -112,7 +126,7 @@ if vu6 then
                 v38:Paragraph({
                     Title = "FORKY HUB About (Xeno/Solara)",
                     Desc = "For, Xeno/Solara Users ~ Trade / Auto Fav Is Not Available",
-                    Image = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
+                    Image = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                     ImageSize = 60,
                     Thumbnail = "",
                     ThumbnailSize = 80,
@@ -124,7 +138,7 @@ if vu6 then
             v38:Paragraph({
                 Title = "FORKY HUB Update Log v1.0.1 (Quality Update)",
                 Desc = "\239\191\189\239\191\189 Improved Overall Script (Better Performance) \n \226\128\162 Added Environment Tab (Only Day,Night,Remove Fog)\n\226\128\162 Added Xeno & Solara Support \n\226\128\162 Improved Auto Fishing V1,V2 \n\226\128\162 Improved Main Tab",
-                Image = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
+                Image = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                 ImageSize = 60,
                 Thumbnail = "",
                 ThumbnailSize = 80,

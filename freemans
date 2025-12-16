@@ -441,7 +441,7 @@ if vu6 then
                 v107("Wait Time", 1, 10, vu48.waitForFish, 0.5, "s", v74 + 24, function(p108)
                     vu48.waitForFish = p108
                 end)
-                v107("Next Cast Delay", 0.5, 10, vu48.nextCastDelay, 0.5, "s", v74 + 73, function(p109)
+                v107("Next Cast Delay", 0.1, 10, vu48.nextCastDelay, 0.1, "s", v74 + 73, function(p109)
                     vu48.nextCastDelay = p109
                 end)
                 local v110 = Instance.new("Frame")

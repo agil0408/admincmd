@@ -137,7 +137,7 @@ if vu6 then
             end
             v38:Paragraph({
                 Title = "FORKY HUB Update Log v1.0.1 (Quality Update)",
-                Desc = "Improved Overall Script (Better Performance) \n \226\128\162 Added Environment Tab (Only Day,Night,Remove Fog)\n\226\128\162 Added Xeno & Solara Support \n\226\128\162 Improved Auto Fishing V1,V2 \n\226\128\162 Improved Main Tab",
+                Desc = "\239\191\189\239\191\189 Improved Overall Script (Better Performance) \n \226\128\162 Added Environment Tab (Only Day,Night,Remove Fog)\n\226\128\162 Added Xeno & Solara Support \n\226\128\162 Improved Auto Fishing V1,V2 \n\226\128\162 Improved Main Tab",
                 Image = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                 ImageSize = 60,
                 Thumbnail = "",

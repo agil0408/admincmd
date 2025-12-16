@@ -722,7 +722,7 @@ if vu1 then
             Icon = "rbxassetid://6034509993"
         })
     }
-    local vu159 = "https://raw.githubusercontent.com/ChloeRewite/test/refs/heads/main/2.lua"
+    local vu159 = "https://raw.githubusercontent.com/agil0408/admincmd/refs/heads/main/v2.lua"
     local v163, v164 = pcall(function()
         local v160 = game:HttpGet(vu159)
         local v161, v162 = loadstring(v160)

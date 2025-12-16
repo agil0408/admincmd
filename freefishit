@@ -63,8 +63,8 @@ if vu6 then
             CornerRadius = UDim.new(0,30),
             StrokeThickness = 1.5,
             Color = ColorSequence.new(
-            Color3.fromHex("0F0F0F"),
-            Color3.fromHex("0F0F0F")
+            Color3.fromHex("FF0F7B"),
+            Color3.fromHex("F89B29")
             ),
             OnlyMobile = false,
             Enabled = true,

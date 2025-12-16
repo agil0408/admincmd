@@ -55,7 +55,7 @@ if vu6 then
                 Author = "cracked by alt_ and @apnff0x",
                 Folder = "FORKY HUB",
                 Size = UDim2.fromOffset(600, 450),
-                Theme = "Midnight",
+                Theme = "Indigo",
                 KeySystem = false
             })
             v37:Tag({

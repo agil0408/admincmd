@@ -38,8 +38,8 @@ if vu6 then
             local v35 = v19["RF/AwaitTradeResponse"]
             local vu36 = v19["RE/FavoriteItem"]
             WindUI:AddTheme({
-                Name = "FORKY Theme",
-                Accent = Color3.fromHex("#18181b"),
+                Name = "FORKY",
+                Accent = Color3.fromHex("#18181bff"),
                 Dialog = Color3.fromHex("#161616"),
                 Outline = Color3.fromHex("#FFFFFF"),
                 Text = Color3.fromHex("#FFFFFF"),
@@ -50,13 +50,27 @@ if vu6 then
             })
             local v37 = WindUI:CreateWindow({
                 Title = "FORKY HUB - Fish It",
-                Icon = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
-                Author = "Forky",
+                Icon = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
+                Author = "Free Version",
                 Folder = "FORKY HUB",
                 Size = UDim2.fromOffset(600, 450),
-                Theme = "Indigo",
+                Theme = "FORKY",
                 KeySystem = false
             })
+            v37:EditOpenButton({
+            Title = "Forky - Fish It",
+            Icon = "rbxassetid://116236936447443",
+            CornerRadius = UDim.new(0,30),
+            StrokeThickness = 1.5,
+            Color = ColorSequence.new(
+            Color3.fromHex("FF0F7B"),
+            Color3.fromHex("F89B29")
+            ),
+            OnlyMobile = false,
+            Enabled = true,
+            Draggable = true,
+            })
+
             v37:Tag({
                 Title = "Version : v1.0.1",
                 Color = Color3.fromHex("#30ff6a"),
@@ -66,7 +80,7 @@ if vu6 then
             WindUI:SetNotificationLower(true)
             WindUI:Notify({
                 Title = "FORKY HUB - Fish It",
-                Content = "Forky",
+                Content = "Free Version",
                 Duration = 5,
                 Image = "square-check-big"
             })
@@ -112,7 +126,7 @@ if vu6 then
                 v38:Paragraph({
                     Title = "FORKY HUB About (Xeno/Solara)",
                     Desc = "For, Xeno/Solara Users ~ Trade / Auto Fav Is Not Available",
-                    Image = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
+                    Image = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                     ImageSize = 60,
                     Thumbnail = "",
                     ThumbnailSize = 80,
@@ -124,7 +138,7 @@ if vu6 then
             v38:Paragraph({
                 Title = "FORKY HUB Update Log v1.0.1 (Quality Update)",
                 Desc = "\239\191\189\239\191\189 Improved Overall Script (Better Performance) \n \226\128\162 Added Environment Tab (Only Day,Night,Remove Fog)\n\226\128\162 Added Xeno & Solara Support \n\226\128\162 Improved Auto Fishing V1,V2 \n\226\128\162 Improved Main Tab",
-                Image = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
+                Image = "rbxthumb://type=Asset&id=76656679473178&w=150&h=150",
                 ImageSize = 60,
                 Thumbnail = "",
                 ThumbnailSize = 80,
@@ -152,8 +166,8 @@ if vu6 then
                 end
             })
             v38:Paragraph({
-                Title = "Want to reset your HWID?",
-                Desc = "Join our official Discord server to do so. Access the FORKY Panel there, where you can easily enter your key to reset your HWID.",
+                Title = "Forky Free Version",
+                Desc = "Join our official Discord server.",
                 Locked = false,
                 BackgroundColor = Color3.fromRGB(0, 0, 0),
                 TextTransparency = 0
@@ -424,10 +438,10 @@ if vu6 then
                     end)
                     return v84
                 end
-                v107("Wait Time", 1, 10, vu48.waitForFish, 0.5, "s", v74 + 24, function(p108)
+                v107("Wait Time", 0.1, 10, vu48.waitForFish, 0.1, "s", v74 + 24, function(p108)
                     vu48.waitForFish = p108
                 end)
-                v107("Next Cast Delay", 0.5, 10, vu48.nextCastDelay, 0.5, "s", v74 + 73, function(p109)
+                v107("Next Cast Delay", 0.1, 10, vu48.nextCastDelay, 0.1, "s", v74 + 73, function(p109)
                     vu48.nextCastDelay = p109
                 end)
                 local v110 = Instance.new("Frame")

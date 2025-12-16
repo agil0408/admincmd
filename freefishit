@@ -38,7 +38,7 @@ if vu6 then
             local v35 = v19["RF/AwaitTradeResponse"]
             local vu36 = v19["RE/FavoriteItem"]
             WindUI:AddTheme({
-                Name = "FORKY Theme",
+                Name = "FORKY",
                 Accent = Color3.fromHex("#18181b"),
                 Dialog = Color3.fromHex("#161616"),
                 Outline = Color3.fromHex("#FFFFFF"),
@@ -54,7 +54,7 @@ if vu6 then
                 Author = "Forky",
                 Folder = "FORKY HUB",
                 Size = UDim2.fromOffset(600, 450),
-                Theme = "Indigo",
+                Theme = "FORKY",
                 KeySystem = false
             })
             v37:Tag({

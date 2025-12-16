@@ -1214,10 +1214,6 @@ end
                     name = "Crater Island",
                     position = Vector3.new(998.030029296875, 2.861737012863159, 5151.169921875)
                 },
-                ["v113"] = {
-                    name = "Cristmast Island",
-                    position = Vector3.new(606.559, 3.565, 1690.269)
-                },
                 ["5"] = {
                     name = "Crescent Lever",
                     position = Vector3.new(1419.75, 31.199445724487305, 78.56999969482422)
@@ -1499,10 +1495,6 @@ end
                 [v11] = {
                     name = "Crater Island",
                     position = Vector3.new(968, 1, 4854)
-                },
-                ["v113"] = {
-                    name = "Cristmast Island",
-                    position = Vector3.new(606.559, 3.565, 1690.269)
                 },
                 ["5"] = {
                     name = "Esoteric Depths",

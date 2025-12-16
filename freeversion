@@ -438,7 +438,7 @@ if vu6 then
                     end)
                     return v84
                 end
-                v107("Wait Time", 0.1, 10, vu48.waitForFish, 0.1, "s", v74 + 24, function(p108)
+                v107("Wait Time", 0.8, 10, vu48.waitForFish, 0.5, "s", v74 + 24, function(p108)
                     vu48.waitForFish = p108
                 end)
                 v107("Next Cast Delay", 0.1, 10, vu48.nextCastDelay, 0.1, "s", v74 + 73, function(p109)

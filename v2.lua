@@ -19,7 +19,7 @@ return function(Window, Tabs)
         Content = [[
 This script is still under development!
 There is a possibility it may get detected if used in public servers!
-If you have suggestions or found bugs, please report them to <font color="rgb(0,170,255)">Discord Forky X</font>!<br/>
+If you have suggestions or found bugs, please report them to <font color="rgb(0,170,255)">Discord Forky</font>!<br/>
 <b>Use at your own risk!</b>
 ]],
         Icon = "water"
@@ -27,13 +27,13 @@ If you have suggestions or found bugs, please report them to <font color="rgb(0,
 
     InfoSection:AddParagraph({
         Title = "Forky X Discord",
-        Content = "Official link discord Forky X!",
+        Content = "Official link discord Forky!",
         Icon = "discord",
         ButtonText = "COPY LINK DISCORD",
         ButtonCallback = function()
             if setclipboard then
                 setclipboard("https://discord.com/invite/")
-                Forky("Succesfully copied link!")
+                chloex("Succesfully copied link!")
             end
         end
     })
@@ -127,7 +127,7 @@ If you have suggestions or found bugs, please report them to <font color="rgb(0,
         Default = false,
         Callback = function(value)
             local coreGui = game:GetService("CoreGui")
-            local ForkyUI = coreGui:FindFirstChild("Forky")
+            local chloeUI = coreGui:FindFirstChild("Forky")
             local toggleUI = coreGui:FindFirstChild("ToggleUIButton")
 
             if value then
@@ -146,7 +146,7 @@ If you have suggestions or found bugs, please report them to <font color="rgb(0,
                     bg.ZIndex = 0
                     bg.Parent = frame
                 end
-                if ForkyUI then ForkyUI.DisplayOrder = 10 end
+                if chloeUI then chloeUI.DisplayOrder = 10 end
                 if toggleUI then toggleUI.DisplayOrder = 11 end
                 RunService:Set3dRenderingEnabled(false)
             else
@@ -687,12 +687,12 @@ If you have suggestions or found bugs, please report them to <font color="rgb(0,
     })
 
     SvX:AddToggle({
-        Title = "Auto Execute - Disable",
+        Title = "Auto Execute Disable",
         Default = false,
         Callback = function(state)
             if queue_on_teleport then
                 queue_on_teleport(state and [[
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Forky-X/main/Main/Forky"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/"))()
                 ]] or "")
             end
         end

@@ -1490,10 +1490,6 @@ end
                     name = "Crystal Island",
                     position = Vector3.new(907.228759765625, 30.212196350097656, 4990.74853515625)
                 },
-                ["4"] = {
-                    name = "Cristmast Island",
-                    position = Vector3.new(606.559, 3.565, 1690.269)
-                },
                 [v11] = {
                     name = "Crater Island",
                     position = Vector3.new(968, 1, 4854)
